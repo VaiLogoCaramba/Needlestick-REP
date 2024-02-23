@@ -45,7 +45,7 @@ class WarningState extends MusicBeatState {
 		infoText = new FlxText(0, 100, FlxG.width,
 			"WARNING\n"
 			+ "THIS MOD HAS SOME TRIPPY FILTERS THAT MIGHT BE SENSITIVE TO SOME PEOPLE"
-			+ "\nPRESS ENTER TO TOGGLE ON OR OFF THE FILTERS"
+			+ "\nPRESS A TO TOGGLE ON OR OFF THE FILTERS"
             + "\nPRESS SPACE TO CONTINUE",
 			32);
         infoText.setFormat(Paths.font("vcr.ttf"), 32, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
@@ -57,6 +57,9 @@ class WarningState extends MusicBeatState {
         selectionText.setFormat(Paths.font("vcr.ttf"), 32, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		selectionText.screenCenter(X);
 		add(selectionText);
+	#if android
+	addVirtualPad(NONE, A);
+	#end
         super.create();
     }
 
