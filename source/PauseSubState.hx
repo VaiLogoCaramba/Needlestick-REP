@@ -304,6 +304,10 @@ class PauseSubState extends MusicBeatSubstate
 
 		super.destroy();
 	}
+	#end
+	#if android
+	addVirtualPad(UP_DOWN, A_B);
+	#end
 
 	function changeSelection(change:Int = 0):Void
 	{
@@ -385,3 +389,4 @@ class PauseSubState extends MusicBeatSubstate
 		skipTimeText.text = FlxStringUtil.formatTime(Math.max(0, Math.floor(curTime / 1000)), false) + ' / ' + FlxStringUtil.formatTime(Math.max(0, Math.floor(FlxG.sound.music.length / 1000)), false);
 	}
 }
+#end
