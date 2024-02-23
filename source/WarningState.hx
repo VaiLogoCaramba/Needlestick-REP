@@ -64,7 +64,7 @@ class WarningState extends MusicBeatState {
     }
 
 	override function update(elapsed:Float) {
-        if(FlxG.keys.justPressed.ENTER && !cooldown) {
+        if(Controls.ACCEPT && !cooldown) {
             if(!curSelected) {
                 trace("yeah");
                 ClientPrefs.menufilter = true;
@@ -83,7 +83,7 @@ class WarningState extends MusicBeatState {
                 cooldown = false;
             });
         }
-        if(FlxG.keys.justPressed.SPACE) {
+        if(Controls.BACK) {
             ClientPrefs.showWarningScreen = false;
 
             var warningSave:FlxSave = new FlxSave();
