@@ -46,7 +46,7 @@ class WarningState extends MusicBeatState {
 			"WARNING\n"
 			+ "THIS MOD HAS SOME TRIPPY FILTERS THAT MIGHT BE SENSITIVE TO SOME PEOPLE"
 			+ "\nPRESS A TO TOGGLE ON OR OFF THE FILTERS"
-            + "\nPRESS SPACE TO CONTINUE",
+            + "\nPRESS B TO CONTINUE",
 			32);
         infoText.setFormat(Paths.font("vcr.ttf"), 32, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
         infoText.alpha = 1;
