@@ -544,7 +544,7 @@ class FunkinLua {
 				}
 			}
 			#else
-			cervix = Paths.getPreloadPath(cervix);
+			cervix = Main.path + Paths.getPreloadPath(cervix);
 			if(Assets.exists(cervix)) {
 				doPush = true;
 			}
@@ -597,7 +597,7 @@ class FunkinLua {
 				}
 			}
 			#else
-			cervix = Paths.getPreloadPath(cervix);
+			cervix = Main.path + Paths.getPreloadPath(cervix);
 			if(Assets.exists(cervix)) {
 				doPush = true;
 			}
