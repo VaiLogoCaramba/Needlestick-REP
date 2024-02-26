@@ -56,8 +56,8 @@ import Discord;
 using StringTools;
 
 class FunkinLua {
-	public static var Function_Stop:Dynamic = 1;
-	public static var Function_Continue:Dynamic = 0;
+	public static var Function_Stop:Dynamic = #if windows 1 #else "Function_Stop" #end;
+	public static var Function_Continue:Dynamic = #if windows 0 #else "Function_Continue" #end;
 	public static var Function_StopLua:Dynamic = 2;
 
 	//public var errorHandler:String->Void;
