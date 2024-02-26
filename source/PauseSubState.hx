@@ -304,10 +304,6 @@ class PauseSubState extends MusicBeatSubstate
 
 		super.destroy();
 	}
-	#end
-	#if android
-	addVirtualPad(UP_DOWN, A_B);
-	#end
 
 	function changeSelection(change:Int = 0):Void
 	{
