@@ -58,7 +58,7 @@ class WarningState extends MusicBeatState {
 		selectionText.screenCenter(X);
 		add(selectionText);
 	#if android
-	addVirtualPad(NONE, A);
+	addVirtualPad(NONE, A_B);
 	#end
         super.create();
     }
