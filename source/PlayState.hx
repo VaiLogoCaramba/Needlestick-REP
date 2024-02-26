@@ -872,6 +872,11 @@ class PlayState extends MusicBeatState
 				luaArray.push(new FunkinLua(luaToLoad));
 			}
 			#end
+
+			#if android
+		addAndroidControls();
+		#end
+
 		}
 		#end
 		noteTypeMap.clear();
@@ -1070,6 +1075,10 @@ class PlayState extends MusicBeatState
 				}
 			}
 		}
+		#end
+		#if android
+		addAndroidControls();
+		androidControls.visible = true;
 		#end
 
 		var daSong:String = Paths.formatToSongPath(curSong);
