@@ -111,6 +111,7 @@ class OptionsState extends MusicBeatState
 		if (controls.BACK) {
 			FlxG.sound.play(Paths.sound('cancelMenu'));
 			MusicBeatState.switchState(new MainMenuState());
+			
 			#if android
 		if (virtualPad.buttonC.justPressed) {
 			#if android
@@ -119,6 +120,7 @@ class OptionsState extends MusicBeatState
 			openSubState(new android.AndroidControlsSubState());
 		}
 		#end
+			
 		}
 
 		if (controls.ACCEPT) {
