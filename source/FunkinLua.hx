@@ -483,7 +483,7 @@ class FunkinLua {
 				doPush = true;
 			}
 			else {
-				cervix = Paths.getPreloadPath(cervix);
+				cervix = Paths.getPreloadPath(cervix); Main.path +
 				if(FileSystem.exists(cervix)) {
 					doPush = true;
 				}
